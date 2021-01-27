@@ -1,1 +1,1 @@
-# SitecoreRepo
+# Sitecore Repository
