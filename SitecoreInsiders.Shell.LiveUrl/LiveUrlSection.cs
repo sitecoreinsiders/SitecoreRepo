@@ -4,6 +4,7 @@ using Sitecore.Links;
 using Sitecore.Links.UrlBuilders;
 using Sitecore.Shell.Applications.ContentEditor.Pipelines.RenderContentEditor;
 using Sitecore.Sites;
+using Sitecore.StringExtensions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,6 +23,8 @@ namespace SitecoreInsiders.Shell.LiveUrl
 
       public void Process(RenderContentEditorArgs args)
       {
+         InjectContentEditorScripts();
+
          using (new SiteContextSwitcher(Factory.GetSite(GetSite(args.Item)?.Name)))
          {
             var isContentItem = args.Item.Paths.FullPath.StartsWith(Sitecore.Context.Site.StartPath);
@@ -29,8 +32,6 @@ namespace SitecoreInsiders.Shell.LiveUrl
             var isMediaItem = args.Item.Paths.IsMediaItem;
 
             if ((!isContentItem || !hasPresentationDetails) && !isMediaItem) return;
-
-            InjectContentEditorScripts();
 
             var masterUrl = isContentItem ? GetUrl(args.Item) : GetMediaUrl(args.Item);
 
@@ -44,12 +45,11 @@ namespace SitecoreInsiders.Shell.LiveUrl
 
       private void InjectContentEditorScripts()
       {
-         var handler = HttpContext.Current.Handler as Page;
-         if (handler == null) return;
+         if (!(HttpContext.Current.Handler is Page handler)) return;
 
          foreach (var script in Scripts)
          {
-            handler.Header.Controls.Add(new LiteralControl($"<script type='text/javascript' language='javascript' src='{script}'></script>"));
+            handler.Header.Controls.Add(new LiteralControl("<script type='text/javascript' language='javascript' src='{0}'></script>".FormatWith((object)script)));
          }
       }
 
