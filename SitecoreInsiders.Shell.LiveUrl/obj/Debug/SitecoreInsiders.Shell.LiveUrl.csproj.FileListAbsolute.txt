@@ -67,8 +67,8 @@ C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\bin\Sys
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\bin\System.Web.Helpers.xml
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\bin\System.Web.Mvc.xml
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.csprojAssemblyReference.cache
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.csproj.CoreCompileInputs.cache
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.csproj.CopyComplete
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.dll
 C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.pdb
+C:\Users\paluis\source\repos\SitecoreRepo\SitecoreInsiders.Shell.LiveUrl\obj\Debug\SitecoreInsiders.Shell.LiveUrl.csprojAssemblyReference.cache
