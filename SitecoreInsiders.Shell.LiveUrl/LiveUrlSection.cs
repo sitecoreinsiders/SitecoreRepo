@@ -23,8 +23,10 @@ namespace SitecoreInsiders.Shell.LiveUrl
 
       public void Process(RenderContentEditorArgs args)
       {
-         InjectContentEditorScripts();
+         if (args?.Item == null) return;
 
+         InjectContentEditorScripts();
+         
          using (new SiteContextSwitcher(Factory.GetSite(GetSite(args.Item)?.Name)))
          {
             var isContentItem = args.Item.Paths.FullPath.StartsWith(Sitecore.Context.Site.StartPath);
@@ -43,15 +45,15 @@ namespace SitecoreInsiders.Shell.LiveUrl
          }
       }
 
-      private void InjectContentEditorScripts()
-      {
-         if (!(HttpContext.Current.Handler is Page handler)) return;
+private void InjectContentEditorScripts()
+{
+   if (!(HttpContext.Current.Handler is Page handler)) return;
 
-         foreach (var script in Scripts)
-         {
-            handler.Header.Controls.Add(new LiteralControl("<script type='text/javascript' language='javascript' src='{0}'></script>".FormatWith((object)script)));
-         }
-      }
+   foreach (var script in Scripts)
+   {
+      handler.Header.Controls.Add(new LiteralControl("<script type='text/javascript' language='javascript' src='{0}'></script>".FormatWith((object)script)));
+   }
+}
 
       private static void Render(RenderContentEditorArgs args, string masterUrl, string webUrl)
       {
