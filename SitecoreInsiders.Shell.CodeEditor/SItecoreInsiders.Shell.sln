@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreInsiders.Shell.CodeEditor", "SitecoreInsiders.Shell.CodeEditor.csproj", "{EF21C6B3-545C-4230-AEFD-54D5271E963D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore Packages", "Sitecore Packages", "{127055BD-EB93-4272-A9D1-E634969DE88C}"
+	ProjectSection(SolutionItems) = preProject
+		Sitecore Packages\SitecoreInsiders.Shell.CodeEditor-1.0.0.zip = Sitecore Packages\SitecoreInsiders.Shell.CodeEditor-1.0.0.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF21C6B3-545C-4230-AEFD-54D5271E963D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF21C6B3-545C-4230-AEFD-54D5271E963D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF21C6B3-545C-4230-AEFD-54D5271E963D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF21C6B3-545C-4230-AEFD-54D5271E963D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F3E13AB-29DD-4C55-ACAB-964A16F070F5}
+	EndGlobalSection
+EndGlobal
