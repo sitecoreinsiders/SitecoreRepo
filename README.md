@@ -1,5 +1,6 @@
 
 # Sitecore Insiders Repository
+Our Portuguese Sitecore community blog https://www.sitecoreinsiders.com/
 
 ## SitecoreInsiders.Shell.LiveUrl
 Custom Section with Live URL of Selected Item in Content Editor
