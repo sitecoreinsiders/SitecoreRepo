@@ -1,0 +1,53 @@
+﻿body {
+    background-color: #1e1e1e;
+}
+
+    body.vs-white {
+        background-color: #fffffe;
+    }
+
+section.sc-dialogContent {
+    position: fixed;
+    top: 0px;
+    height: auto;
+    bottom: 38px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: inherit;
+}
+
+.monaco-editors-container {
+    float: left;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.monaco-editor, .monaco-diff-editor {
+    width: 100%;
+    height: 100%;
+}
+
+.monaco-diff-button {
+    float: right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.monaco-margin-error {
+    background: red;
+}
+
+.monaco-line-error {
+    background: #d8716d4d;
+}
+
+.monaco-margin-warn {
+    background: rgb(255, 238, 0);
+}
+
+.monaco-line-warn {
+    background: #d3d86d4d;
+}
